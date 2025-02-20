@@ -5,16 +5,6 @@ const LyricDisplay = () => {
   return (
     <div className="min-h-screen bg-soft-bg px-4 py-16 sm:px-6 lg:px-8">
       <div className="mx-auto max-w-6xl animate-fade-up">
-        <div className="text-center">
-          <span className="inline-block rounded-full bg-soft-title px-3 py-1 text-sm font-medium text-soft-text animate-fade-in">
-            Song Title
-          </span>
-          <h1 className="mt-4 text-4xl font-bold tracking-tight text-soft-text sm:text-5xl">
-            Example Song Title
-          </h1>
-          <p className="mt-2 text-lg text-soft-text/80">Artist Name</p>
-        </div>
-
         <div className="mt-12 grid grid-cols-1 gap-8 md:grid-cols-2 md:items-start">
           <div className="w-full">
             <BlurImage
@@ -22,6 +12,15 @@ const LyricDisplay = () => {
               alt="Atmospheric image"
               className="aspect-square w-full rounded-2xl object-cover shadow-xl"
             />
+            <div className="mt-4 text-center">
+              <span className="inline-block rounded-full bg-soft-title px-3 py-1 text-sm font-medium text-soft-text animate-fade-in">
+                Song Title
+              </span>
+              <h1 className="mt-2 text-2xl font-bold tracking-tight text-soft-text">
+                Example Song Title
+              </h1>
+              <p className="mt-1 text-sm text-soft-text/80">Artist Name</p>
+            </div>
           </div>
 
           <div className="space-y-8 text-lg leading-8 text-soft-text">
